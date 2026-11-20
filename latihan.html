@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Praktikum 6 - Basic JavaScript</title>
+</head>
+<body>
+  <h1>Ini Belajar JS</h1>
+  <script>
+    // Sesi 2: Variabel & Tipe Data
+    const name = "ami";
+    let umur = 99;
+    let nilai = 100;
+    let aktif = true;
+    const prodi = "Teknik Informatika";
+
+    console.log("Nama:", name);
+    console.log("Umur:", umur);
+    console.log("Nilai:", nilai);
+    console.log("Status aktif:", aktif);
+    console.log("Prodi:", prodi);
+    console.log("Tipe nilai:", typeof nilai);
+
+    // Sesi 3: Operator & Perhitungan
+    const tugas = 80;
+    const uts = 75;
+    const uas = 90;
+    const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+    
+    console.log("Nilai Akhir:", akhir);
+    console.log("Lulus:", akhir >= 60);
+
+    // Sesi 4: Percabangan if, else if, else
+    const nilai2 = 78;
+    let kategori;
+
+    if (nilai2 >= 85) {
+        kategori = "A";
+    } else if (nilai2 >= 70) {
+        kategori = "B";
+    } else if (nilai2 >= 60) {
+        kategori = "C";
+    } else {
+        kategori = "D";
+    }
+
+    console.log("Nilai:", nilai2);
+    console.log("Kategori:", kategori);
+
+    // Sesi 5: Perulangan dan Fungsi Dasar
+    function hitungDiskon(harga, persen) {
+        return harga - (harga * persen / 100);
+    }
+
+    for (let i = 1; i <= 3; i++) {
+        const harga = i * 10000;
+        const bayar = hitungDiskon(harga, 10);
+        console.log("Barang", i, "Harga:", harga, "Bayar:", bayar);
+    }
+  </script>  
+</body>
+</html>
